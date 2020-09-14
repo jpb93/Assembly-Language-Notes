@@ -97,4 +97,8 @@ Virtual 8086 mode - Gives you your own 1 MB segment of memory to emulate older D
 1.1.3 More on Memory
 --------------------------------------------
 
+16 bit addressing - The method used on the original IBM PC. Limits us to 1 MB of memory
 
+32 bit addressing - Added in the 80386 which is one solution to the limitation on memory size, however there are problems (see below)
+
+Backwards compatibility
