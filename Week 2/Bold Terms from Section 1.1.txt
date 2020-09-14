@@ -1,0 +1,100 @@
+1.1 General Properties of Personal Computers
+--------------------------------------------
+
+Memory Unit - The part of the computer that contains both the executable program and the data it uses
+
+Machine Cycles - The speed of a CPU measured in MHz (cycles per second)
+
+Bits - Short for binary digit, a component of computer memory with two states, on and off, 1 and 0
+
+Bytes - a collection of 8 bits. Memory bytes are numbered from 0 to N-1, where N is the number of Bytes in 
+Memory
+
+Address - A bytes number
+
+Memory location - Where a particular byte lives in memory. Each bit is always contained in the same byte at the same
+address
+
+Instructions - small steps for the computer to execute, such as add, move, etc. These are encoded into binary
+
+Operation code - the byte responsible for specifying the operation
+
+Stored Program Concept - Storing a program in memory. This is in contrast to the old way of connecting wires by
+hand. Advantages include speed, consistent memory usage, and the ability to have many programs in memory at the
+same time.
+
+Machine Language - The actual numbers that go into the computers memory. Example: If the operation code for add is 31,
+and you wanted to add the contents of memory location 4278 to 3133, the instruction would be 3142783313 (though in 
+binary).
+
+Assmebly language - Gives programmers the ability to use symbolic names for operations and memory locations. Now that 
+actual machine language is almost never used, machine language and assembly language are sometimes used interchangably.
+
+Assembler - A table lookup program that translates the assembly code into machine code
+
+Arithmetic and Logic Unit or ALU - the part of the CPU which performs computations
+
+Control Unit - Part of the CPU which fetches information from and stores information to memory, tells the ALU and the I/O
+devices what to do
+
+Registers - Temporary storage in the CPU that can be thought of as small, fast memory
+
+General Registers - Registers that can be used for all types of arithmetic as well as addresses
+
+Stack pointer and Instruction pointer - two non general registers. The instruction pointer is responsible for containing 
+the memory address of the next instruction to be executed by the CPU
+
+Fetch-Execute Cycle - an infinite loop that runs the process of fetching instructions at the IP, then updating the IP to 
+point to the next instruction, then executing those instructions, etc
+
+Stack - Implements call and return, handles interupts, and storage for procedure parameters and local variables. The stack 
+itself is a block of memory locations, and the stack pointer contains the adress of the 'top' of the stack.
+
+RAM - Random Access Memory. You can get or store information in any part of memory in a time that is independent of where
+you last looked. 
+
+ROM - Read only memory. ROM is distinguished from RAM in that RAM can be changed whereas ROM contents are permanent (hence,
+read only)
+
+Boostrap - A routine in a ROM address that contains the code for booting up and loading the operating system
+
+Firmware - Programs in ROM that are somewhere between hardware and software 
+
+RISC and CISC - Reduced Instruction Set Computing and Complex Instruction Set Computing, respectively. These are two 
+philosophies of CPU instruction set design. CISC improves efficiency by using complex instructions that do many things.
+RISC says that each instruction be simnple and only execute in a single machine cycle. RISC CPUs usually have many registers.
+IBM PCs use the CISC philosophy
+
+1.1.2 IBM PC Hardware
+--------------------------------------------
+
+Present day CPUs (in 2001 when this book was published) come from two families:
+-Intel 8088, 8086, 80286, 80386, 80386, 80486, and Pentium (80586) chips, collectively called the 80X86
+-PowerPC 601, 604, G3, G4, which use RISC architecture and are used in Macs
+
+-This course will focus on the 80X86 family
+
+Interupt Vectors - not defined here, only that the 80X86 chip uses the first 1024 bytes for them (explained in more detail, 
+chapter 15)
+
+ROM BIOS - Basic Input Output System. Presents the programmer with simplier, more machine and device independent I/O operations
+
+Video Memory - A set of fixed memory locations that are an exact image of what is displayed on the screen. Example: Displaying 'M'
+on the screen in a particular place requires 'M' to be moved to a corresponding place in video memory
+
+Video Board - contains nessecary video memory and also redraw the contents of that memory on a CRT screen (again, this book was written
+in 2001. Not sure if it works the same way today)
+
+Real Mode - Where IBM PCs start up. In this mode only the first MB of RAM is usable
+
+Protected Mode - The next mode where all memory becomes available. Called protected because different programs can be prevented from
+interfering with eachother.
+
+DOS Window - Fakes the view into the video memory
+
+Virtual 8086 mode - Gives you your own 1 MB segment of memory to emulate older DOS operating systems
+
+1.1.3 More on Memory
+--------------------------------------------
+
+
