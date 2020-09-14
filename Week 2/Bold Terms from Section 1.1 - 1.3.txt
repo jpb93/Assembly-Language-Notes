@@ -1,0 +1,49 @@
+Bolded Terms from 1.1
+---------------------
+
+Memory Unit - The part of the computer that contains both the executable program and the data it uses
+
+Machine Cycles - The speed of a CPU measured in MHz (cycles per second)
+
+Bits - Short for binary digit, a component of computer memory with two states, on and off, 0 and 1
+
+Bytes - a collection of 8 bits. Memory bytes are numbered from 0 to N-1, where N is the number of Bytes in 
+Memory
+
+Address - A bytes number
+
+Memory location - Where a particular byte lives in memory. Each bit is always contained in the same byte at the same
+address
+
+Instructions - small steps for the computer to execute, such as add, move, etc. These are encoded into binary
+
+Operation code - the byte responsible for specifying the operation
+
+Stored Program Concept - Storing a program in memory. This is in contrast to the old way of connecting wires by
+hand. Advantages include speed, consistent memory usage, and the ability to have many programs in memory at the
+same time.
+
+Machine Language - The actual numbers that go into the computers memory. Example: If the operation code for add is 31,
+and you wanted to add the contents of memory location 4278 to 3133, the instruction would be 3142783313 (though in 
+binary).
+
+Assmebly language - Gives programmers the ability to use symbolic names for operations and memory locations. Now that 
+actual machine language is almost never used, machine language and assembly language are sometimes used interchangably.
+
+Assembler - A table lookup program that translates the assembly code into machine code
+
+Arithmetic and Logic Unit or ALU - the part of the CPU which performs computations
+
+Control Unit - Part of the CPU which fetches information from and stores information to memory, tells the ALU and the I/O
+devices what to do
+
+Registers - Temporary storage in the CPU that can be thought of as small, fast memory
+
+General Registers - Registers that can be used for all types of arithmetic as well as addresses
+
+Stack pointer and Instruction pointer - two non general registers. The instruction pointer is responsible for containing 
+the memory address of the next instruction to be executed by the CPU
+
+Fetch-Execute Cycle - an infinite loop that runs the process of fetching instructions at the IP, then updating the IP to 
+point to the next instruction, then executing those instructions, etc.
+

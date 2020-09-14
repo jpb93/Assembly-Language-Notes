@@ -1,0 +1,22 @@
+I. Computers are divided into three parts
+	A. CPU (Central Processing Unit)
+	B. Memory Unit (contains program and data for the program)
+	C. Input/Output devices
+	
+II. The CPU
+	A. CPU is inside a single integrated circuit called the computer chip
+	B. Relatively small
+	C. Measured in MHz (megahertz, or machine cycles per second)
+	D. Devices such as the keyboard and mouse do their I/O directly through the CPU
+	E. Other devices, such as disks, go through memory first
+		1. If a disk directly went through CPU, it would slow down dramatically
+		2. The CPU has to initiate data transfer, which takes place to or from memory
+		   using DMA (direct memory access)
+
+III. Bits
+	A. Computer memory is a collection of bits
+	B. Short for binary digit
+		1. A bit is a collection of two stable states, on and off, represented by 0 and 1
+	C. Bits are grouped in collections of 8 bits called bytes
+		2. Bytes in memory are numbered from 0 to N - 1, where N is the number of bytes in
+		   memory.
